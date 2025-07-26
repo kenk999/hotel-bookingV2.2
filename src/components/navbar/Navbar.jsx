@@ -37,17 +37,6 @@ const Navbar = function(){
   return (
     <div className="navbar">
       <div className="navContainer">
-        {/* Mobile menu overlay */}
-        <div className="mobileOverlay" style={{
-            display: "none",
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0,0,0,0.5)",
-            zIndex: 999
-        }}></div>
         <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
           <span className="logo">Indibooking</span>
         </Link>
@@ -80,3 +69,4 @@ const Navbar = function(){
 };
 
 export default Navbar;
+
