@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+.fp {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.fpItem{
+  flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.fpItem:hover {
+  transform: translateY(-8px);
+}
+
+.fpImg{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.fpItem:hover .fpImg {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fpName{
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.fpItem:hover .fpName {
+  color: #0071c2;
+}
+
+.fpCity{
+  font-weight: 300;
+}
+
+.fpPrice{
+  font-weight: 500;
+  color: #0071c2;
+  font-size: 16px;
+}
+
+.fpPriceDetails {
+  font-size: 12px;
+  color: #6b6b6b;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+.fpRating>button{
+  background-color: #003580;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 3px;
+  margin-bottom:10px;
+}
+
+.fpItem:hover .fpRating>button {
+  background-color: #0071c2;
+  transform: scale(1.05);
+}
+
+.fpRating>span{
+  font-size: 14px;
+}
+
+.pricing{ 
+    font-weight: bold;
+}
+body {
+  overflow-x: hidden;
+}
